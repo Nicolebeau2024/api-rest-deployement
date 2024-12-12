@@ -1,0 +1,10 @@
+.serpentin-canvas {
+    position: fixed; /* Changez ici */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Pour que la souris interagisse avec le contenu en dessous */
+    z-index: 1000; /* Assure-toi que le canvas est au-dessus des autres éléments */
+  }
+  
