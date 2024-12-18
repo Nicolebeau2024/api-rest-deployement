@@ -108,7 +108,9 @@ h2 {
   background-color: #a51f10; /* Rouge pour la suppression */
   border: none;
   color: #000000; /* Noir pour le texte */
-  padding: 10px 20px;
+  font-size: min(80%, 80%);
+  overflow-wrap: normal;
+  padding: 3.8% 12%;
   border-radius: 4px;
   cursor: pointer;
   margin: 5px;
@@ -125,10 +127,11 @@ h2 {
   color: var(--text-color);
   padding: 10px;
   border-radius: 4px;
-  width: 50%; /* Réduit la largeur de l'input à 50% */
+  max-width: 50%;
   box-sizing: border-box;
-  margin: 0 auto; /* Centre horizontalement */
-  font-size: 150%; /* Agrandit le texte des inputs de 50% */
+  margin: 0 auto;
+  font-size: 150%;
+  min-width: 220px;
 }
 
 .form-control:focus {
@@ -180,16 +183,17 @@ h2 {
   box-sizing: border-box;
   text-align: center;
   box-shadow: 3px 3px var(--shadow-color), -1em 0 .4em var(--shadow-color);
+  overflow-wrap : break-word;
 }
 
 .user-card h5, .user-card p {
   margin: 10px 0;
-  font-size: 150%; /* Agrandit le texte de 50% */
   font-family: "police";
+  font-size: min(2rem, 5vw);
 }
 
 .user-card .btn {
-  width: 45%; /* Ajustez si nécessaire */
+  
   margin: 5px;
   font-family: "police";
 }
@@ -197,7 +201,7 @@ h2 {
 
 button {
   --purple: #9B7EDA;
-  font-size: 18px;
+  
   padding: 0.8em 3em;
   letter-spacing: 0.08em;
   position: relative;
@@ -232,4 +236,12 @@ button:hover:before {
   transform: translateX(15em);
 }
 
+.buttonTop {
+font-size: 100%;
+}
 
+.buttonBot {
+  font-size: min(80%, 80%);
+  overflow-wrap: normal;
+  padding: 0.8vw 5.4vw;
+}
