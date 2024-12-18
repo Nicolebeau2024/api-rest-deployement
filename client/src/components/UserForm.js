@@ -17,7 +17,7 @@ const UserForm = ({ addUser }) => {
 
     return (
         <div className="user-form-container"> {/* Conteneur principal du formulaire */}
-            <img src={exampleImage} alt="Example" style={{ width: '70%', height: '190px', margin: '0 0% 0 0%' }} /> {/* Affichage de l'image d'exemple */}
+            <img src={exampleImage} alt="Example" style={{ width: '70%', height: 'auto', margin: '0 0% 0 0%' }} /> {/* Affichage de l'image d'exemple */}
             <form onSubmit={handleSubmit}> {/* Formulaire avec gestion de la soumission */}
                 <div className="form-group"> {/* Groupe de champs pour le nom */}
                     <label>Name</label> {/* Étiquette pour le champ du nom */}
@@ -39,7 +39,7 @@ const UserForm = ({ addUser }) => {
                         required
                     /> {/* Champ de texte pour l'email */}
                 </div>
-                <button type="submit" className="btn btn-primary">Add User</button> {/* Bouton pour soumettre le formulaire */}
+                <button type="submit" className="btn btn-primary buttonTop">Add User</button> {/* Bouton pour soumettre le formulaire */}
             </form>
         </div>
     );

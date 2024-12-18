@@ -9,7 +9,7 @@ const UserList = ({ users, editUser, deleteUser }) => {
                 <div key={user._id} className="user-card"> {/* Carte pour chaque utilisateur */}
                     <h5 className="card-title">{user.name}</h5> {/* Nom de l'utilisateur */}
                     <p className="card-text">{user.email}</p> {/* Email de l'utilisateur */}
-                    <button className="btn btn-primary" onClick={() => editUser(user._id)}>Edit</button> {/* Bouton pour éditer l'utilisateur */}
+                    <button className="btn btn-primary buttonBot" onClick={() => editUser(user._id)}>Edit</button> {/* Bouton pour éditer l'utilisateur */}
                     <button className="btn btn-danger" onClick={() => deleteUser(user._id)}>Delete</button> {/* Bouton pour supprimer l'utilisateur */}
                 </div>
             ))}
